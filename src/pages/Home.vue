@@ -4,7 +4,7 @@ import Footer from '../components/FooterLayout.vue';
 import Promo from '../components/blocks/PromoLayout.vue';
 import Catalog from '../components/blocks/CatalogLayout.vue';
 
-const dataObjAU = [
+const dataObj = [
     {
         "imgUrl": "/home/elements-of-byron.jpg",
         "elemTitle": "Elements of Byron",
@@ -24,50 +24,6 @@ const dataObjAU = [
         "elemLink": "https://www.mayfairhotel.com.au/",
     },
 ]
-
-const dataObjEat = [
-    {
-        "imgUrl": "/home/eureka-89.jpg",
-        "elemTitle": "Eureka 89",
-        "elemText": "Combining sleek design with glorious unparalleled views spanning 360 degrees across Melbourne, guests can enjoy seasonal degustation menu's with the option of matched wines. Eureka 89 chefs are inspired by seasonal produce and create delicious menus that allow the flavours to stand on their own.",
-        "elemLink": "https://eureka89.com.au/",
-    },
-    {
-        "imgUrl": "/home/waterfront.jpg",
-        "elemTitle": "Waterfront",
-        "elemText": "A prestigious seafood restaurant with river view and heated alfresco area. Waterfront, would satisfy every guest that seeks either a relaxed romantic dinner or an aged chargrilled steak with glass of wine from Waterfront's extensive wine selection.",
-        "elemLink": "https://waterfrontsouthgate.com.au/",
-    },
-    {
-        "imgUrl": "/home/longrain-melbourne-interior.jpg",
-        "elemTitle": "Longrain",
-        "elemText": "Welcome to Longrain, Melbourne. Our menu brings together South East Asian influences with the best Victorian produce. Inspired by the communal eating philosophy of the Asian table, our menu is made up of dishes created for sharing. Large servings and communal tables encourage the spirit of eating together, so you can try each dish as part of a full tasting experience, just as it was intended.",
-        "elemLink": "https://longrainmelbourne.com/",
-    },
-]
-
-
-const dataObjVisit = [
-    {
-        "imgUrl": "/home/sydney-opera-house.jpg",
-        "elemTitle": "Sydney Opera House",
-        "elemText": "One of the most iconic buildings in the world – the Sydney Opera House is an architectural masterpiece and vibrant performance space. It's a place where the past shapes the future, where conventions are challenged and cultures are celebrated.",
-        "elemLink": "https://www.sydneyoperahouse.com/",
-    },
-    {
-        "imgUrl": "/home/royal-botanic-gardens-victoria.jpg",
-        "elemTitle": "Royal Botanic Gardens Victoria",
-        "elemText": "Visit Melbourne's inner-city oasis. Over 10,000 plant species from around the world are presented in a kaleidoscope of colour and texture. Sweeping lawns, tranquil lakes and majestic trees are home to an amazing range of wildlife.",
-        "elemLink": "https://www.rbg.vic.gov.au/melbourne-gardens/",
-    },
-    {
-        "imgUrl": "/home/cradle-mountain.jpg",
-        "elemTitle": "Cradle Mountain",
-        "elemText": "Iconic Cradle Mountain. A place for all seasons, discover deep snowdrifts in winter, spectacular displays of yellows, oranges and reds across the mountain slopes in autumn as Tasmania’s deciduous Fagus turns colour, playful young joeys and hungry echidnas emerging in spring, and the fragrance of wildflowers filling the air as you dip your toe into a crystal-clear lake on a summer’s day.",
-        "elemLink": "https://parks.tas.gov.au/explore-our-parks/cradle-mountain",
-    },
-]
-
 </script>
 
 <template>
@@ -81,18 +37,8 @@ const dataObjVisit = [
         />
 
         <Catalog
-            :elementsData="dataObjAU"
+            :elementsData="dataObj"
             title="Top Hotels in Australia"
-        />
-
-        <Catalog
-            :elementsData="dataObjEat"
-            title="Best Places to eat"
-        />
-
-        <Catalog
-            :elementsData="dataObjVisit"
-            title="Places to visit:"
         />
     </main>
     <Footer />

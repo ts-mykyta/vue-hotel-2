@@ -19,6 +19,10 @@ a {
     transition: $transition;
 }
 
+a:hover {
+    color: $primary;
+}
+
 ul {
     padding: 0;
 }
