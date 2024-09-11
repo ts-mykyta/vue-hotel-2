@@ -111,8 +111,8 @@ const dataObj = [
 
         <section class="popular">
             <div class="container">
-                <h2 class="top__title">Popular Destinations</h2>
-                <div class="top__subtitle">CHOOSE YOUR NEXT DESTINATION</div>
+                <h2 class="popular__title">Popular Destinations</h2>
+                <div class="popular__subtitle">CHOOSE YOUR NEXT DESTINATION</div>
             </div>
 
             <Carousel 
@@ -123,7 +123,7 @@ const dataObj = [
                 :touchDrag="true"
                 :pauseAutoplayOnHover="true"
                 :breakpoints="breakpoints"
-                :spacePadding="20"
+                :spacePadding="10"
             >
                 <Slide v-for="(item, index) in dataObj" :key="index">
                     <div class="popular__item">
@@ -195,7 +195,57 @@ const dataObj = [
         
 
 .popular
+    padding: 80px 0
+    overflow: hidden
+
+    &__title
+        font-size: 32px
+        line-height: 40px
+        margin-bottom: 15px
+        font-weight: 700
+        text-transform: uppercase
+
+    &__subtitle
+        margin-bottom: 30px
+        font-size: 18px
+        color: #939aa4
+
     &__item
-        margin: 0 45px    
+        margin: 0 45px
+        position: relative
+
+        &-img
+            overflow: hidden
+
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                transition: transform 5s ease
+
+        &-descr
+            position: absolute
+            z-index: 3
+            bottom: 5px
+            left: 0
+            text-align: left
+            padding: 20px 0 20px 40px
+            background: rgba(0, 0, 0, .3)
+            width: 100%
+            color: #fff
+            transition: $transition
+
+            div
+                font-weight: 700
+                margin-bottom: 10px
+
+
+        &:hover
+            .popular__item-descr
+                padding-bottom: 40px
+            
+            .popular__item-img img
+                transform: scale(1.1)
+                
 
 </style>
