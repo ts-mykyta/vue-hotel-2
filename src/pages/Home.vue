@@ -1,38 +1,88 @@
 <script setup>
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide} from 'vue3-carousel'
+
 import Header from '../components/HeaderLayout.vue';
 import Footer from '../components/FooterLayout.vue';
 import Promo from '../components/blocks/PromoLayout.vue';
 import HomeHotelsCatalog from '../components/blocks/HomeHotelsCatalog.vue';
 import Catalog from '../components/blocks/CatalogLayout.vue';
 
+const breakpoints =  {
+    320: {
+        itemsToShow: 1,
+        snapAlign: 'center', 
+    },
+    526: {
+        itemsToShow: 1.7,
+        snapAlign: 'center',
+    },
+    700: {
+        itemsToShow: 2,
+        snapAlign: 'center',
+    },
+    928: {
+        itemsToShow: 2.6,
+        snapAlign: 'center',
+    },
+    1024: {
+        itemsToShow: 3.4,
+        snapAlign: 'start',
+    },
+    1440: {
+        itemsToShow: 5,
+        snapAlign: 'start',
+    }
+}
+
 const dataObj = [
     {
         "imgUrl": "/home/hotel.webp",
+        "imgForSlider": "/home/slider/pic1.webp",
         "elemTitle": "Nemacolin",
         "elemText": "Discover rustic charm and refined elegance at Nemacolin, a picturesque retreat nestled amidst Pennsylvania's scenic countryside.",
-        "elemLink": "/us",
+        "elemLink": "/united-states",
         "elemCountry": "USA"
     },
     {
         "imgUrl": "/home/hotel.webp",
+        "imgForSlider": "/home/slider/pic2.webp",
         "elemTitle": "Nemacolin",
         "elemText": "Discover rustic charm and refined elegance at Nemacolin, a picturesque retreat nestled amidst Pennsylvania's scenic countryside.",
-        "elemLink": "/us",
-        "elemCountry": "USA"
+        "elemLink": "/new-zealand",
+        "elemCountry": "New Zealand"
     },
     {
         "imgUrl": "/home/hotel.webp",
+        "imgForSlider": "/home/slider/pic3.webp",
         "elemTitle": "Nemacolin",
         "elemText": "Discover rustic charm and refined elegance at Nemacolin, a picturesque retreat nestled amidst Pennsylvania's scenic countryside.",
-        "elemLink": "/us",
-        "elemCountry": "USA"
+        "elemLink": "/netherlands",
+        "elemCountry": "Netherlands"
     },
     {
         "imgUrl": "/home/hotel.webp",
+        "imgForSlider": "/home/slider/pic4.webp",
         "elemTitle": "Nemacolin",
         "elemText": "Discover rustic charm and refined elegance at Nemacolin, a picturesque retreat nestled amidst Pennsylvania's scenic countryside.",
-        "elemLink": "/us",
-        "elemCountry": "USA"
+        "elemLink": "/canada",
+        "elemCountry": "Canada"
+    },
+    {
+        "imgUrl": "/home/hotel.webp",
+        "imgForSlider": "/home/slider/pic5.webp",
+        "elemTitle": "Nemacolin",
+        "elemText": "Discover rustic charm and refined elegance at Nemacolin, a picturesque retreat nestled amidst Pennsylvania's scenic countryside.",
+        "elemLink": "/france",
+        "elemCountry": "France"
+    },
+    {
+        "imgUrl": "/home/hotel.webp",
+        "imgForSlider": "/home/slider/pic3.webp",
+        "elemTitle": "Nemacolin",
+        "elemText": "Discover rustic charm and refined elegance at Nemacolin, a picturesque retreat nestled amidst Pennsylvania's scenic countryside.",
+        "elemLink": "/australia",
+        "elemCountry": "Australia"
     },
 ]
 </script>
@@ -57,6 +107,40 @@ const dataObj = [
                 <h2>Explore our hotel reviews and start your adventure</h2>
                 <p>Your satisfaction is our utmost priority. We deeply value your feedback and use it to enhance our services and offerings. Our consistently high ratings and hotel reviews demonstrate our dedication to delivering outstanding experiences.</p>
             </div>
+        </section>
+
+        <section class="popular">
+            <div class="container">
+                <h2 class="top__title">Popular Destinations</h2>
+                <div class="top__subtitle">CHOOSE YOUR NEXT DESTINATION</div>
+            </div>
+
+            <Carousel 
+                :itemsToShow="5"
+                :autoplay="5000"
+                :wrapAround="true"
+                :autoplayTimeout="3000"
+                :touchDrag="true"
+                :pauseAutoplayOnHover="true"
+                :breakpoints="breakpoints"
+                :spacePadding="20"
+            >
+                <Slide v-for="(item, index) in dataObj" :key="index">
+                    <div class="popular__item">
+                        <div class="popular__item-img">
+                            <img :src="item.imgForSlider" :alt="item.elemCountry">
+                        </div>
+                        <div class="popular__item-descr">
+                            <div>| {{ item.elemCountry }}</div>
+                            <li>
+                                <router-link :to="item.elemLink">
+                                    <span>View All Hotels</span>
+                                </router-link>
+                            </li>
+                        </div>
+                    </div>
+                </slide>
+            </carousel>
         </section>
 
     </main>
@@ -110,6 +194,8 @@ const dataObj = [
         max-width: 570px
         
 
-    
+.popular
+    &__item
+        margin: 0 45px    
 
 </style>

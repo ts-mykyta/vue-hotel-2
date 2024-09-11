@@ -109,6 +109,11 @@ watchEffect(() => {
 
 .header
     padding: 15px 0
+    position: fixed
+    top: 0
+    width: 100%
+    background: #fff
+    z-index: 5
 
     &__wrapper
         display: flex
@@ -216,7 +221,6 @@ watchEffect(() => {
 
 @media (max-width: 768px)
     .header
-        position: relative
         &__menu
             position: fixed
             top: 0
@@ -278,9 +282,6 @@ watchEffect(() => {
 
         &--active
             .header__burger
-                span
-                    background: #fff
-
                 span:nth-child(1)
                     transform: rotate(45deg) translate(6px, 6px)
 
