@@ -8,11 +8,16 @@ function toggleMenu() {
   isMenuActive.value = !isMenuActive.value;
 }
 
+function toggleSubMenu() {
+    const subMenu = document.querySelector(".header__menu-sub")
+    subMenu.classList.toggle("header__menu-sub--active")
+}
+
 watchEffect(() => {
   if (isMenuActive.value) {
-    document.body.classList.add('body--hidden');
+    document.querySelector(".overlay").classList.add('overlay--active');
   } else {
-    document.body.classList.remove('body--hidden');
+    document.querySelector(".overlay").classList.remove('overlay--active');
   }
 });
 </script>
@@ -21,62 +26,70 @@ watchEffect(() => {
     <header :class="['header', { 'header--active': isMenuActive }]">
         <div class="container">
             <div class="header__wrapper">
+                <router-link to="/" class="header__logo">
+                    <img src="/logo.png" alt="logo">
+                </router-link>
+
                 <nav class="header__menu">
-                    <div class="header__logo">
-                        <router-link to="/" class="header__menu-logo">
-                            <img src="/logo.png" alt="logo">
-                        </router-link>
-                    </div>
                     <ul class="header__menu-main">
-                        <li class="header__menu-link">
-                            <router-link to="/" exact-active-class="header__menu-link--active">
-                                <span>Home</span>
+                        <li>
+                            <router-link to="/" class="header__menu-logo">
+                                <img src="/logo.png" alt="logo">
                             </router-link>
                         </li>
-                        <li class="header__menu-link header__menu-link--submenu">
-                            <router-link to="/" exact-active-class="header__menu-link--active">
+                        <li>
+                            <router-link to="/" class="header__menu-link">
+                                <span>Home</span>
+                            </router-link> 
+                        </li>
+                        <li @click="toggleSubMenu">
+                            <router-link 
+                                to="/" 
+                                class="header__menu-link header__menu-link--sub"
+                            >
                                 <span>Destinations</span>
-                            </router-link>
-                            <ul class="header__menu-submain">
+                            </router-link> 
+
+                            <ul class="header__menu-sub">
                                 <li>
-                                    <router-link to="/united-state" exact-active-class="header__menu-link--active">
+                                    <router-link to="/united-states">
                                         <span>United States</span>
                                     </router-link>
                                 </li>
                                 <li>
-                                    <router-link to="/new-zealand" exact-active-class="header__menu-link--active">
+                                    <router-link to="/new-zealand">
                                         <span>New Zealand</span>
-                                    </router-link>
+                                    </router-link>  
                                 </li>
                                 <li>
-                                    <router-link to="/netherlands" exact-active-class="header__menu-link--active">
+                                    <router-link to="/netherlands">
                                         <span>Netherlands</span>
-                                    </router-link>
-                                </li>
+                                    </router-link> 
+                                </li> 
                                 <li>
-                                    <router-link to="/canada" exact-active-class="header__menu-link--active">
+                                    <router-link to="/canada">
                                         <span>Canada</span>
-                                    </router-link>
+                                    </router-link>  
                                 </li>
                                 <li>
-                                    <router-link to="/france" exact-active-class="header__menu-link--active">
+                                    <router-link to="/france">
                                         <span>France</span>
                                     </router-link>
-                                </li>
+                                </li>  
                                 <li>
-                                    <router-link to="/australia" exact-active-class="header__menu-link--active">
+                                    <router-link to="/australia">
                                         <span>Australia</span>
-                                    </router-link>
-                                </li>
+                                    </router-link> 
+                                </li> 
                             </ul>
                         </li>
-                        <li class="header__menu-link">
-                            <router-link to="/contact" exact-active-class="header__menu-link--active">
+                        <li>
+                            <router-link to="/contact" class="header__menu-link">
                                 <span>Contact Us</span>
                             </router-link>
                         </li>
-                        <li class="header__menu-link">
-                            <button>Sign up</button>
+                        <li>
+                            <button class="header__menu-btn">Sign Up</button>
                         </li>
                     </ul>
                 </nav>
@@ -94,56 +107,195 @@ watchEffect(() => {
 <style scoped lang="sass">
 @import '../assets/styles/main'
 
-
 .header
-    padding: 25px 0
-    &__menu
+    padding: 15px 0
+
+    &__wrapper
         display: flex
         justify-content: space-between
         align-items: center
 
-        &-main
-            display: flex
-            align-items: center
-            gap: 20px
-        
-        &-submain
-            position: absolute
-            top: 45px
-            padding-top: 20px
-            width: 170px
-            opacity: 0
-            transition: $transition
-            border-top: 2px solid $primary
-            li
-                display: block
-                width: 100%
-                padding: 5px 0 5px 10px
-                font-weight: 400
-                text-transform: none
 
-                &:hover
-                    background: lightgrey
-                    span
-                        color: $primary
-                    
-                
-
-        &-link
-            text-transform: uppercase
-            font-weight: 700
-            font-size: 15px
-
-            &--submenu
-                position: relative
-                &:hover
-                    .header__menu-submain
-                        opacity: 1
     &__logo
-        max-width: 160px
+        max-width: 190px
+
         img
             width: 100%
             height: 100%
             object-fit: cover
+
+    &__menu
+        z-index: 7
+        &-logo
+            display: none
+
+        &-main
+            display: flex
+            align-items: center
+            gap: 24px
+
+            li
+                position: relative
+                text-transform: uppercase
+                font-weight: 600
+                font-size: 15px
+
+                &:hover .header__menu-sub 
+                    opacity: 1
+                    visibility: visible
+                    
+
+        &-sub
+            position: absolute
+            display: flex
+            flex-direction: column
+            top: 45px
+            background-color: #fff
+            border-top: 2px solid $primary
+            padding: 10px 0
+            width: 220px
+            z-index: 3
+            transition: $transition
+            opacity: 0
+            visibility: hidden
+            
+            li
+                width: 100%
+                transition: $transition
+                
+                a
+                    color: #505050
+                    display: block
+                    font-size: 14px
+                    padding: 8px 20px
+                    text-transform: capitalize
+                    transition: all 0.15s linear
+                    font-weight: 500
+                    font-family: Montserrat, sans-serif
+
+                &:hover
+                    background: lightgrey
+                    a
+                        color: $primary
+
+        &-link
+            padding: 30px 0       
+
+        &-btn
+            border-radius: 0
+            font-size: 15px
+            padding: 10px 15px
+            cursor: pointer
+            font-weight: 600
+            background-color: #2f21ab
+            border: none
+            color: #fff
+            font-weight: 700
+            transition: all .2 linear
+
+            &:hover
+                background-color: $primary
+
+    &__burger
+        width: 20px
+        height: 16px
+        display: none
+        flex-direction: column
+        gap: 5px
+        cursor: pointer
+        z-index: 7
+
+        span
+            display: block
+            width: 100%
+            height: 2px
+            background: #666
+            border-radius: 1px
+            transition: $transition
+
+
+@media (max-width: 768px)
+    .header
+        position: relative
+        &__menu
+            position: fixed
+            top: 0
+            left: -300px
+            background: #fff
+            width: 280px
+            display: block
+            overflow-y: scroll
+            height: 100vh
+            transition: $transition
+            
+            &-logo
+                display: block
+                max-width: 140px
+                padding: 30px 0 30px 10px
+
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+
+            &-main
+                flex-direction: column
+                justify-content: start
+                align-items: start
+                gap: 0
+
+                li
+                    width: 100%
+                    height: 100%
+                    border-bottom: 1px solid #e9e9e9
+                    padding: 15px
+
+                    &:first-child
+                        padding: 15px 0 15px 10px
+
+                    &:last-child
+                        border-bottom: none
+
+            &-sub
+                position: relative
+                top: 10px
+                background: #f6f6f6
+                width: 100%
+                transition: $transition
+                display: none
+                visibility: visible
+                opacity: 1
+
+                li
+                    border: none
+
+                &--active
+                    display: block
+
+        &__burger
+            display: flex
+
+
+        &--active
+            .header__burger
+                span
+                    background: #fff
+
+                span:nth-child(1)
+                    transform: rotate(45deg) translate(6px, 6px)
+
+                span:nth-child(2)
+                    position: relative
+                    transform: translateX(-300px)
+                    opacity: 0
+
+                span:nth-child(3)
+                    transform: rotate(-45deg) translate(4px, -4px)
+            
+            .header__menu
+                left: 0
+
+
         
+    
 </style>
