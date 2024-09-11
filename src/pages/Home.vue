@@ -143,6 +143,23 @@ const dataObj = [
             </carousel>
         </section>
 
+        <section class="blog">
+            <div class="container">
+                <div class="blog__wrapper">
+                    <h2 class="blog__title">Our reviews are written by real travelers who have experienced our tours firsthand.</h2>
+                    <div class="blog__descr">
+                        <p>We value transparency in everything we do. Our reviews provide detailed insights into the highlights, challenges, and overall experiences of our tours, giving you a clear picture of what to expect.</p>
+                        <p>We verify all our reviews to ensure they come from genuine travelers who have participated in our tours. This helps maintain the integrity of our review system and ensures you receive reliable information.</p>
+                    </div>
+                    <div class="blog__img">
+                        <img src="/home/blog1.png" alt="">
+                    </div>
+                    <div class="blog__img">
+                        <img src="/home/blog2.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <Footer />
 </template>
@@ -248,4 +265,57 @@ const dataObj = [
                 transform: scale(1.1)
                 
 
+.blog
+    padding: 20px 0 40px 0
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(2, 50%)
+        grid-column-gap: 20px
+        grid-row-gap: 10px
+
+        @media (max-width: 768px)
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(3, 1fr)
+
+    &__title
+        grid-area: 1 / 1 / 2 / 2       
+        font-size: 32px
+        line-height: 40px
+        margin-bottom: 25px
+        font-weight: 700
+
+        @media (max-width: 768px)
+            grid-area: 1 / 1 / 2 / 3
+
+    &__descr
+        grid-area: 1 / 2 / 2 / 3
+        display: flex
+        justify-content: space-between
+        gap: 20px
+        font-size: 16px
+        font-weight: 400
+        color: #6f6f6f
+
+        @media (max-width: 768px)
+            grid-area: 2 / 1 / 3 / 3
+            flex-direction: column
+
+    &__img
+        width: 100%
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+    &__img:nth-child(1)
+        grid-area: 2 / 1 / 3 / 2
+
+        @media (max-width: 768px)
+            grid-area: 3 / 1 / 4 / 2
+
+    &__img:nth-child(2)
+        grid-area: 2 / 2 / 3 / 3
+
+        @media (max-width: 768px)
+            grid-area: 3 / 2 / 4 / 2
 </style>
