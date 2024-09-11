@@ -8,6 +8,11 @@ const props = defineProps({
         required: true
     },
 
+    subtitle: {
+        type: String,
+        required: true
+    },
+
     elementsData: {
         type: Array,
         required: true
@@ -20,6 +25,7 @@ const props = defineProps({
     <section class="catalog">
         <div class="container">
             <h1 class="catalog__title">{{ title }}</h1>
+            <div class="promo__subtitle">{{ subtitle }}</div>
 
             <div class="catalog__wrapper" >
                 <CatalogElement
