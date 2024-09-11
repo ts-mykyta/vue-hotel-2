@@ -35,7 +35,7 @@ const props = defineProps({
     height: 300px
     background-position: center center
     background-size: cover
-    padding-top: 80px
+    padding-top: 120px
 
     &--home
         height: 650px
