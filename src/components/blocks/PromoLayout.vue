@@ -21,8 +21,10 @@ const props = defineProps({
 
 <template>
     <section class="promo" :class="specialClasses" :style="{ backgroundImage: `url(${props.imgUrl})` }">
-        <h1 class="promo__title">{{ title }}</h1>
-        <div class="promo__descr">{{ text }}</div>
+        <div class="container">
+            <h1 class="promo__title">{{ title }}</h1>
+            <div class="promo__descr">{{ text }}</div>
+        </div>
     </section>
 </template>
 
@@ -30,25 +32,20 @@ const props = defineProps({
 @import "../../assets/styles/main"
     
 .promo
-    height: 600px
+    height: 300px
     background-position: center center
     background-size: cover
-
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
+    padding-top: 80px
 
     &--home
-        height: 100vh
+        height: 650px
 
     &__title
         color: #fff
         font-size: 52px
         font-weight: 700
-        max-width: 800px
-        margin-bottom: 20px
-        text-align: center
+        margin-bottom: 10px
+        font-family: serif
     
     &__descr
         color: #fff
@@ -57,7 +54,6 @@ const props = defineProps({
         font-size: 18px
         font-weight: 400
         line-height: 30px
-        text-align: center
         padding: 0 10px
 
 
