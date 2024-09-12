@@ -76,12 +76,20 @@ setTimeout(() => {
     max-height: 650px
     display: block
 
+    @media (max-width: 768px)
+        height: 500px
+
+    @media (max-width: 576px)
+        height: 600px
+
     .promo__title
         color: #fff
         font-size: 52px
         font-weight: 700
         margin-bottom: 10px
         font-family: serif
+        @media (max-width: 576px)
+            font-size: 40px
 
     .promo__descr
         color: #fff

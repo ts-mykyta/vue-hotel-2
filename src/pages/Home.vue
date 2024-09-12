@@ -6,7 +6,7 @@ import Header from '../components/HeaderLayout.vue';
 import Footer from '../components/FooterLayout.vue';
 import Promo from '../components/blocks/PromoLayout.vue';
 import HomeHotelsCatalog from '../components/blocks/HomeHotelsCatalog.vue';
-import Catalog from '../components/blocks/CatalogLayout.vue';
+import ScrollToTop from '../components/ScrollToTop.vue';
 
 const breakpoints =  {
     320: {
@@ -88,8 +88,10 @@ const dataObj = [
 </script>
 
 <template>
+    <ScrollToTop />
     <Header />
     <main class="main">
+        <div id="searchWidget"><iframe id="widgetIframe" src="https://www.expedia.com/marketing/widgets/searchform/widget?wtt=4&tp1=ееее&tp2=345&lob=H&des=&wbi=&olc=000000&whf=4&hfc=&wif=4&ifc=000000&wbc=FFCB00&wbf=4&bfc=3D3100&wws=2&sfs=H300FW400F&langid=1033" width="100%" height="100%" scrolling="no" frameborder="0"></iframe></div>
         <Promo 
             title="Discover Australia's Premier Casino Hotels" 
             text="Explore Luxury Accommodations, World-Class Gaming, and Unforgettable Experience"
@@ -167,6 +169,24 @@ const dataObj = [
 <style scoped lang="sass">
 @import "../assets/styles/main"
 
+#searchWidget
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: 8%
+    width: 768px
+    height: 200px
+    z-index: 999
+
+    @media (max-width: 768px)
+        width: 526px
+        top: 8%
+
+    @media (max-width: 576px)
+        width: 300px
+        height: 250px
+        top: 7%
+    
 .adventure
     position: relative
     background: url('/home/adventure.png') top center / cover no-repeat

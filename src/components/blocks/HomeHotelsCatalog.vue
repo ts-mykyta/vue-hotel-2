@@ -48,7 +48,7 @@ const props = defineProps({
 @import "../../assets/styles/main"
 
 .top
-    padding: 50px 0
+    padding: 120px 0 50px 0
 
     &__title
         text-align: center
