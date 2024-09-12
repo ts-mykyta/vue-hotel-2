@@ -40,6 +40,7 @@ const hotelsData = [
 </script>
 
 <template>
+    https://www.booking.com/searchresults.html?ss=German&checkin=2024-09-12&checkout=2024-09-15&group_adults=2&group_children=1&age=5&no_rooms=1&selected_currency=UAH
     <ScrollToTop />
     <Header />
 
