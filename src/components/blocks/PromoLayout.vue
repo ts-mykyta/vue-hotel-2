@@ -32,20 +32,20 @@ const props = defineProps({
 @import "../../assets/styles/main"
     
 .promo
-    height: 300px
+    height: 450px
     background-position: center center
     background-size: cover
     padding-top: 120px
-
-    &--home
-        height: 650px
+    display: flex
+    justify-content: center
+    align-items: center
+    
 
     &__title
         color: #fff
-        font-size: 52px
-        font-weight: 700
+        font-size: 42px
+        font-weight: 800
         margin-bottom: 10px
-        font-family: serif
     
     &__descr
         color: #fff
@@ -55,7 +55,28 @@ const props = defineProps({
         font-weight: 400
         line-height: 30px
         padding: 0 10px
+        text-align: center
 
+
+.promo--home
+    height: 650px
+    display: block
+
+    .promo__title
+        color: #fff
+        font-size: 52px
+        font-weight: 700
+        margin-bottom: 10px
+        font-family: serif
+
+    .promo_descr
+        color: #fff
+        width: 100%
+        max-width: 900px
+        font-size: 18px
+        font-weight: 400
+        line-height: 30px
+        padding: 0 10px
 
 @media (max-width: 420px)
     .promo
