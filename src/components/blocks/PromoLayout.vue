@@ -1,4 +1,6 @@
 <script setup>
+import { ref } from 'vue'
+
 const props = defineProps({
     imgUrl: {
         type: String,
@@ -17,13 +19,25 @@ const props = defineProps({
         required: false
     }
 })
+
+const showTitle = ref(false)
+const showText = ref(false)
+
+setTimeout(() => {
+    showTitle.value = true
+    showText.value = true
+}, 100)
 </script>
 
 <template>
     <section class="promo" :class="specialClasses" :style="{ backgroundImage: `url(${props.imgUrl})` }">
         <div class="container">
-            <h1 class="promo__title">{{ title }}</h1>
-            <div class="promo__descr">{{ text }}</div>
+            <transition name="slide-fade">
+                <h1 v-if="showTitle" class="promo__title">{{ title }}</h1>
+            </transition>
+            <transition name="slide-fade">
+                <div v-if="showText" class="promo__descr">{{ text }}</div>
+            </transition>
         </div>
     </section>
 </template>
@@ -59,7 +73,7 @@ const props = defineProps({
 
 
 .promo--home
-    height: 650px
+    max-height: 650px
     display: block
 
     .promo__title
@@ -78,6 +92,26 @@ const props = defineProps({
         line-height: 30px
         padding: 0 10px
         text-align: left
+
+
+.slide-fade-enter-active, .slide-fade-leave-active
+  transition: all 2.5s ease-out
+
+.slide-fade-enter-from
+  opacity: 0
+  transform: translateX(-50px)
+
+.slide-fade-enter-to
+  opacity: 1
+  transform: translateX(0)
+
+.slide-fade-leave-from
+  opacity: 1
+  transform: translateX(0)
+
+.slide-fade-leave-to
+  opacity: 0
+  transform: translateX(-50px)
 
 @media (max-width: 420px)
     .promo
