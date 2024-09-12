@@ -4,6 +4,7 @@ import USA from '../pages/countries/USA.vue'
 import Contact from '../pages/Contact.vue'
 import Privacy from '../pages/Privacy.vue'
 import Terms from '../pages/Terms.vue'
+import Cookies from '../pages/Cookies.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,6 +38,12 @@ const router = createRouter({
       name: 'terms',
       component: Terms,
       meta: {title: "Terms"}
+    },
+    {
+      path: '/cookies',
+      name: 'cookies',
+      component: Cookies,
+      meta: {title: "Cookies"}
     },
   ],
   scrollBehavior(to, from, savedPosition) {

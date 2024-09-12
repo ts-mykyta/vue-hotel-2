@@ -1,91 +1,55 @@
 <script setup>
 import Header from '../components/HeaderLayout.vue';
 import Footer from '../components/FooterLayout.vue';
+import Promo from '../components/blocks/PromoLayout.vue';
 </script>
 
 <template>
     <Header />
     <main class="main">
+        <Promo 
+            imgUrl="/policy-banner.jpg"
+            title="Terms & Conditions"
+            text="Home > Terms & Conditions"
+        />
+
         <section class="policy">
             <div class="container">
-                <h1 class="policy__title">Terms and Conditions</h1>
                 <div class="policy__body">
-                    <p>These Terms and Conditions govern your use of the website <a href="http://auhotelsbest.com">auhotelsbest.com</a>, Home (the "Website"), owned by AU Hotels best, with an address at 150 Exhibition St, Melbourne VIC 3000, Australia. By accessing or using the Website, you agree to comply with and be bound by these Terms. If you do not agree with any part of these Terms, please do not use the Website.</p>
+                    <p>Welcome to the Novanightstay website ("Website")! These Terms and Conditions ("Terms") govern your use of the Website, which provides comparisons and reviews of hotels primarily in Europe, USA, Australia, and Canada. Please read these Terms carefully before accessing or using the Website. By accessing or using the Website, you agree to be bound by these Terms.</p>
 
-                    <h2>Welcome to Auhotelsbest!</h2>
+                    <h2>Information Only</h2>
+                    <p>This Website is for informational purposes only. We do not sell any hotels or other travel-related products or services. Links on the Website to third-party websites are provided solely as a convenience to you and are not an endorsement by Novanightstay of those websites or their content. You acknowledge and agree that you use these links at your own risk and that Novanightstay is not responsible for the content or availability of any third-party website.</p>
 
-                    <p>These terms and conditions outline the rules and regulations for the use of Auhotelsbest's Website, located at <a href="http://auhotelsbest.com">auhotelsbest.com</a>.</p>
-
-                    <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use Auhotelsbest if you do not agree to take all of the terms and conditions stated on this page.</p>
-
-                    <h3>Terminology</h3>
-
-                    <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person logging on to this website and compliant to the Company's terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance, and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of nz. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to the same.</p>
-
-                    <h3>Cookies</h3>
-
-                    <p>We employ the use of cookies. By accessing Auhotelsbest, you agreed to use cookies in agreement with Auhotelsbest's <a href="#">Privacy Policy</a>.</p>
-
-                    <p>Most interactive websites use cookies to let us retrieve the user's details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
-
-                    <h3>License</h3>
-
-                    <p>Unless otherwise stated, Auhotelsbest and/or its licensors own the intellectual property rights for all material on Auhotelsbest. All intellectual property rights are reserved. You may access this from Auhotelsbest for your own personal use subjected to restrictions set in these terms and conditions.</p>
-
-                    <p>You must not:</p>
+                    <h2>User Conduct</h2>
+                    <p>You agree to use the Website in a lawful and responsible manner and in accordance with these Terms. You agree not to:</p>
                     <ul>
-                        <li>Republish material from Auhotelsbest</li>
-                        <li>Sell, rent or sub-license material from Auhotelsbest</li>
-                        <li>Reproduce, duplicate or copy material from Auhotelsbest</li>
-                        <li>Redistribute content from Auhotelsbest</li>
+                        <li>Use the Website for any illegal or unauthorized purpose, including but not limited to, posting any content that is defamatory, obscene, threatening, or hateful.</li>
+                        <li>Interfere with or disrupt the Website or its servers or networks.</li>
+                        <li>Attempt to gain unauthorized access to any portion of the Website or any other accounts or systems connected to the Website.</li>
+                        <li>Violate any applicable laws or regulations.</li>
                     </ul>
 
-                    <p>This Agreement shall begin on the date hereof. Our Terms and Conditions were created with the help of the <a href="https://www.termsandconditionsgenerator.com">Terms and Conditions Generator</a>.</p>
+                    <h2>Intellectual Property Rights</h2>
+                    <p>The content and materials on this Website, including without limitation, the text, graphics, logos, icons, images, audio clips, digital downloads, data compilations, and software, are the property of Novanightstay or its licensors and are protected by copyright and other intellectual property laws. You may not modify, copy, reproduce, republish, upload, post, transmit, or distribute any portion of the Website or its content without the prior written consent of Novanightstay.</p>
 
-                    <h3>Comments</h3>
+                    <h2>Disclaimer of Warranties</h2>
+                    <p>The information provided on this Website is provided "as is" and "as available" without any representations or warranties, express or implied. Novanightstay makes no representations or warranties in relation to the accuracy, completeness, or reliability of the information on the Website. Novanightstay disclaims all warranties, express or implied, including but not limited to, the implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
 
-                    <p>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. Auhotelsbest does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of Auhotelsbest, its agents and/or affiliates. Comments reflect the views and opinions of the person who posts their views and opinions. To the extent permitted by applicable laws, Auhotelsbest shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.</p>
+                    <h2>Limitation of Liability</h2>
+                    <p>To the fullest extent permitted by applicable law, Novanightstay shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, damages for loss of profits, revenue, data, use, or other intangibles, whether arising out of or in connection with the use or performance of the Website, or from any information, content, materials, or services provided or available through the Website, even if Novanightstay has been advised of the possibility of such damages.</p>
 
-                    <p>Auhotelsbest reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive, or causes breach of these Terms and Conditions.</p>
+                    <h2>Indemnification</h2>
+                    <p>You agree to indemnify, defend, and hold harmless Novanightstay, its affiliates, officers, directors, employees, agents, licensors, and suppliers from and against all losses, expenses, damages, and costs, including reasonable attorneys' fees, resulting from any violation of these Terms or any activity related to your account (including negligent or wrongful conduct) by you or any other person accessing the Website using your Internet account.</p>
 
-                    <h3>Hyperlinking to our Content</h3>
+                    <h2>Governing Law and Jurisdiction</h2>
+                    <p>These Terms shall be governed by and construed in accordance with the applicable laws, without regard to its conflict of law principles. You agree that any legal action or proceeding arising out of or relating to these Terms or your use of the Website shall be brought exclusively in the local courts, and you hereby consent to the jurisdiction and venue of such courts.</p>
 
-                    <p>The following organizations may link to our Website without prior written approval:</p>
-                    <ul>
-                        <li>Government agencies;</li>
-                        <li>Search engines;</li>
-                        <li>News organizations;</li>
-                        <li>Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and</li>
-                        <li>System-wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Website.</li>
-                    </ul>
+                    <h2>Changes to Terms</h2>
+                    <p>Novanightstay reserves the right to modify or replace these Terms at any time. Any changes will be effective immediately upon posting on the Website. Your continued use of the Website after any such changes constitutes your acceptance of the new Terms.</p>
 
-                    <p>These organizations may link to our home page, to publications, or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party's site.</p>
-
-                    <h3>Reservation of Rights</h3>
-
-                    <p>We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amend these terms and conditions and its linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.</p>
-
-                    <h3>Removal of links from our website</h3>
-
-                    <p>If you find any link on our Website that is offensive for any reason, you are free to contact and inform us at any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.</p>
-
-                    <h3>Disclaimer</h3>
-
-                    <p>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:</p>
-                    <ul>
-                        <li>Limit or exclude our or your liability for death or personal injury;</li>
-                        <li>Limit or exclude our or your liability for fraud or fraudulent misrepresentation;</li>
-                        <li>Limit any of our or your liabilities in any way that is not permitted under applicable law; or</li>
-                        <li>Exclude any of our or your liabilities that may not be excluded under applicable law.</li>
-                    </ul>
-
-                    <p>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.</p>
-
-                    <p>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
-
-                    <p><strong>Contact Information:</strong></p>
-                    <p>150 Exhibition St, Melbourne VIC 3000</p>
-                    <p>Email: <a href="mailto:support@auhotelsbest.com">support@auhotelsbest.com</a></p>
+                    <h2>Contact Us</h2>
+                    <p>If you have any questions about these Terms or the Website, please contact us at <a href="mailto:info@australianbestcasinohotels.com">info@australianbestcasinohotels.com</a>.</p>
                 </div>
             </div>
         </section>
@@ -107,6 +71,7 @@ import Footer from '../components/FooterLayout.vue';
     &__body
         font-size: 16px
         line-height: 28px
+        padding: 40px 0
         p
             margin-bottom: 10px
 
