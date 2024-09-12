@@ -3,6 +3,7 @@ import Header from '../../components/HeaderLayout.vue';
 import Footer from '../../components/FooterLayout.vue';
 import Promo from '../../components/blocks/PromoLayout.vue';
 import CatalogLayout from '../../components/blocks/CatalogLayout.vue';
+import ScrollToTop from '../../components/ScrollToTop.vue';
 
 
 const hotelsData = [
@@ -39,6 +40,7 @@ const hotelsData = [
 </script>
 
 <template>
+    <ScrollToTop />
     <Header />
 
     <Promo

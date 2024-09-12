@@ -2,9 +2,11 @@
 import Header from '../components/HeaderLayout.vue';
 import Footer from '../components/FooterLayout.vue';
 import Promo from '../components/blocks/PromoLayout.vue';
+import ScrollToTop from '../components/ScrollToTop.vue';
 </script>
 
 <template>
+    <ScrollToTop />
     <Header />
     <main class="main">
         <Promo 

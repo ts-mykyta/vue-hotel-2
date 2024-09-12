@@ -6,7 +6,7 @@ import Header from '../components/HeaderLayout.vue';
 import Footer from '../components/FooterLayout.vue';
 import Promo from '../components/blocks/PromoLayout.vue';
 import HomeHotelsCatalog from '../components/blocks/HomeHotelsCatalog.vue';
-import Catalog from '../components/blocks/CatalogLayout.vue';
+import ScrollToTop from '../components/ScrollToTop.vue';
 
 const breakpoints =  {
     320: {
@@ -88,6 +88,7 @@ const dataObj = [
 </script>
 
 <template>
+    <ScrollToTop />
     <Header />
     <main class="main">
         <Promo 
