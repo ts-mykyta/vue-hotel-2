@@ -69,7 +69,7 @@ const props = defineProps({
         margin-bottom: 10px
         font-family: serif
 
-    .promo_descr
+    .promo__descr
         color: #fff
         width: 100%
         max-width: 900px
@@ -77,6 +77,7 @@ const props = defineProps({
         font-weight: 400
         line-height: 30px
         padding: 0 10px
+        text-align: left
 
 @media (max-width: 420px)
     .promo
