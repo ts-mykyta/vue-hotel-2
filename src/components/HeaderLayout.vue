@@ -1,7 +1,21 @@
 <script setup>
 import { useRoute } from 'vue-router';
-import { ref, watchEffect } from 'vue';
+import { ref, watchEffect} from 'vue';
 
+import PopupComponent from './PopupComponent.vue';
+
+// Popup
+const visible = ref(false);
+
+function showPopup() {
+  visible.value = true; // Показываем попап
+}
+
+function closePopup() {
+  visible.value = false; // Скрываем попап
+}
+
+// Menu
 const isMenuActive = ref(false);
 
 function toggleMenu() {
@@ -89,7 +103,7 @@ watchEffect(() => {
                             </router-link>
                         </li>
                         <li>
-                            <button class="header__menu-btn">Sign Up</button>
+                            <button @click="showPopup" class="header__menu-btn">Sign Up</button>
                         </li>
                     </ul>
                 </nav>
@@ -101,6 +115,8 @@ watchEffect(() => {
                 </div>
             </div>
         </div>
+
+        <PopupComponent :visible="visible" @close="closePopup" />
     </header>
 </template>
 
