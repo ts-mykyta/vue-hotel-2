@@ -172,19 +172,20 @@ const dataObj = [
     position: absolute
     left: 50%
     transform: translateX(-50%)
-    top: 8%
+    top: 350px
     width: 768px
-    height: 200px
+    height: 300px
     z-index: 3
 
     @media (max-width: 768px)
         width: 526px
+        height: 200px
         top: 8%
 
     @media (max-width: 576px)
-        width: 300px
+        width: 100%
         height: 250px
-        top: 7%
+        top: 380px
     
 .adventure
     position: relative
