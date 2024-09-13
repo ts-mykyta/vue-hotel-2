@@ -41,7 +41,11 @@ function closePopup() {
           </label>
           <label>
             <input type="checkbox" />
-            I accept the <a href="#" class="terms-link">Terms and Conditions</a>
+            I accept the 
+            <!-- <a href="#" class="terms-link">Terms and Conditions</a> -->
+            <router-link to="/terms" class="terms-link" target="_blank">
+                <span>Terms and Conditions</span>
+            </router-link> 
           </label>
         </div>
 
