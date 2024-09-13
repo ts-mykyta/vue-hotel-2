@@ -185,7 +185,7 @@ const dataObj = [
     @media (max-width: 576px)
         width: 100%
         height: 250px
-        top: 380px
+        top: 400px
     
 .adventure
     position: relative
