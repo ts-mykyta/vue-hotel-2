@@ -73,14 +73,14 @@ setTimeout(() => {
 
 
 .promo--home
-    max-height: 650px
+    height: 550px
     display: block
 
     @media (max-width: 768px)
         height: 500px
 
     @media (max-width: 576px)
-        height: 600px
+        height: 550px
 
     .promo__title
         color: #fff
