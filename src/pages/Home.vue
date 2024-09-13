@@ -168,7 +168,6 @@ const dataObj = [
 
 <style scoped lang="sass">
 @import "../assets/styles/main"
-
 #searchWidget
     position: absolute
     left: 50%
@@ -176,7 +175,7 @@ const dataObj = [
     top: 8%
     width: 768px
     height: 200px
-    z-index: 999
+    z-index: 3
 
     @media (max-width: 768px)
         width: 526px
