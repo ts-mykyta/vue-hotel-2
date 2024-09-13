@@ -68,7 +68,6 @@ setTimeout(() => {
         font-size: 18px
         font-weight: 400
         line-height: 30px
-        padding: 0 10px
         text-align: center
 
 
@@ -89,7 +88,7 @@ setTimeout(() => {
         margin-bottom: 10px
         font-family: serif
         @media (max-width: 576px)
-            font-size: 40px
+            font-size: 32px
 
     .promo__descr
         color: #fff
@@ -98,7 +97,6 @@ setTimeout(() => {
         font-size: 18px
         font-weight: 400
         line-height: 30px
-        padding: 0 10px
         text-align: left
 
 
