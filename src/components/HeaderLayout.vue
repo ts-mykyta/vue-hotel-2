@@ -42,6 +42,7 @@ watchEffect(() => {
             <div class="header__wrapper">
                 <router-link to="/" class="header__logo">
                     <img src="/logo.png" alt="logo">
+                    <span>australiahotelscasino</span>
                 </router-link>
 
                 <nav class="header__menu">
@@ -138,7 +139,20 @@ watchEffect(() => {
 
 
     &__logo
-        max-width: 240px
+        max-width: 50px
+        display: flex
+        align-items: center
+        gap: 10px
+
+        span
+            font-weight: 900
+            font-family: "Sarabun"
+            color: #4E4B84
+            font-size: 18px
+            font-family: sans-serif
+
+            @media (max-width: 1024px)
+                font-size: 16px
 
         img
             width: 100%
