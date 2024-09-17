@@ -124,7 +124,7 @@ watchEffect(() => {
 @import '../assets/styles/main'
 
 .header
-    padding: 15px 0
+    padding: 10px 0
     position: fixed
     top: 0
     width: 100%
@@ -138,7 +138,7 @@ watchEffect(() => {
 
 
     &__logo
-        max-width: 190px
+        max-width: 240px
 
         img
             width: 100%
