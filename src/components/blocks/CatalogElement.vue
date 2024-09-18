@@ -9,15 +9,6 @@ const props = defineProps({
 
 <template>
 <div class="catalog__element">
-    <!-- <a :href="elementData.elemLink ? elementData.elemLink : '#'" class="catalog__element-img">
-        <img :src="props.elementData.imgUrl" alt="img">
-    </a>
-    <div class="catalog__element-content">
-        <div class="catalog__element-title">{{ elementData.elemTitle }}</div>
-        <div class="catalog__element-text">{{ elementData.elemText }}</div>
-        <a :href="elementData.elemLink ? elementData.elemLink : '#'" target="_blank" class="catalog__element-btn">Read More</a>
-    </div> -->
-
     <div class="catalog__element-top">
         <div class="catalog__element-img">
             <img :src="elementData.imgUrl" :alt="elementData.hotelName">
@@ -45,7 +36,13 @@ const props = defineProps({
 
 .catalog__element
     max-width: 320px
+    height: 100%
     transition: $transition
+    border-left: 1px solid #e1e1e1
+    border-right: 1px solid #e1e1e1
+    border-bottom: 1px solid #e1e1e1
+    border-bottom-left-radius: 5px
+    border-bottom-right-radius: 5px
 
     &-top
         position: relative
@@ -119,12 +116,7 @@ const props = defineProps({
         display: block
         min-height: 230px
         box-sizing: border-box
-        padding: 10px 20px
-        border-left: 1px solid #e1e1e1
-        border-right: 1px solid #e1e1e1
-        border-bottom: 1px solid #e1e1e1
-        border-bottom-left-radius: 5px
-        border-bottom-right-radius: 5px
+        padding: 10px
         font-size: 16px
         font-weight: 400
         color: #6f6f6f
