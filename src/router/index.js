@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../pages/Home.vue'
 import USA from '../pages/countries/USA.vue'
 import Australia from '../pages/countries/Australia.vue'
+import Canada from '../pages/countries/Canada.vue'
 import Contact from '../pages/Contact.vue'
 import Privacy from '../pages/Privacy.vue'
 import Terms from '../pages/Terms.vue'
@@ -27,6 +28,12 @@ const router = createRouter({
       name: 'Australia',
       component: Australia,
       meta: {title: "Australia"}
+    },
+    {
+      path: '/canada',
+      name: 'Canada',
+      component: Canada,
+      meta: {title: "Canada"}
     },
     {
       path: '/contact',
