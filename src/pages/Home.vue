@@ -37,50 +37,50 @@ const breakpoints =  {
 
 const dataObj = [
     {
-        "imgUrl": "/home/hotel.webp",
+        "imgUrl": "/countries/usa/port-d-hiver.jpg",
         "imgForSlider": "/home/slider/pic1.webp",
-        "elemTitle": "Nemacolin",
-        "elemText": "Discover rustic charm and refined elegance at Nemacolin, a picturesque retreat nestled amidst Pennsylvania's scenic countryside.",
+        "elemTitle": "Port D'hiver Bed And Breakfast",
+        "elemText": "Escape your everyday cares at our romantic boutique hotel in Melbourne Beach, a Select Registry Property. ...",
         "elemLink": "/united-states",
         "elemCountry": "USA"
     },
     {
-        "imgUrl": "/home/hotel.webp",
+        "imgUrl": "/countries/usa/captain-david-kelley.jpg",
         "imgForSlider": "/home/slider/pic2.webp",
-        "elemTitle": "Nemacolin",
-        "elemText": "Discover rustic charm and refined elegance at Nemacolin, a picturesque retreat nestled amidst Pennsylvania's scenic countryside.",
-        "elemLink": "/new-zealand",
-        "elemCountry": "New Zealand"
+        "elemTitle": "Captain David Kelley House",
+        "elemText": "A warm welcome awaits you. The Captain David Kelley House is an upscale bed & breakfast set in a restored Greek Revival ...",
+        "elemLink": "/united-states",
+        "elemCountry": "USA"
     },
     {
-        "imgUrl": "/home/hotel.webp",
+        "imgUrl": "/countries/canada/abbie-s-garden-bed-breakfast.jpg",
         "imgForSlider": "/home/slider/pic3.webp",
-        "elemTitle": "Nemacolin",
-        "elemText": "Discover rustic charm and refined elegance at Nemacolin, a picturesque retreat nestled amidst Pennsylvania's scenic countryside.",
-        "elemLink": "/netherlands",
-        "elemCountry": "Netherlands"
-    },
-    {
-        "imgUrl": "/home/hotel.webp",
-        "imgForSlider": "/home/slider/pic4.webp",
-        "elemTitle": "Nemacolin",
-        "elemText": "Discover rustic charm and refined elegance at Nemacolin, a picturesque retreat nestled amidst Pennsylvania's scenic countryside.",
+        "elemTitle": "Abbie's Garden Bed & Breakfast",
+        "elemText": "Our suites are located in buildings outside the MAIN HOUSE, offering you ultimate guest privacy ...",
         "elemLink": "/canada",
         "elemCountry": "Canada"
     },
     {
-        "imgUrl": "/home/hotel.webp",
-        "imgForSlider": "/home/slider/pic5.webp",
-        "elemTitle": "Nemacolin",
-        "elemText": "Discover rustic charm and refined elegance at Nemacolin, a picturesque retreat nestled amidst Pennsylvania's scenic countryside.",
-        "elemLink": "/france",
-        "elemCountry": "France"
+        "imgUrl": "/countries/canada/waterfront-resort.jpg",
+        "imgForSlider": "/home/slider/pic4.webp",
+        "elemTitle": "Summerland Waterfront Resort & Spa",
+        "elemText": "Put rest and rejuvenation on your to-do list with a relaxing stay at the Summerland Waterfront Resort & Spa, set ...",
+        "elemLink": "/canada",
+        "elemCountry": "Canada"
     },
     {
-        "imgUrl": "/home/hotel.webp",
+        "imgUrl": "/countries/new-zealand/bayview-valley-lodge.jpg",
+        "imgForSlider": "/home/slider/pic5.webp",
+        "elemTitle": "Bayview Valley Lodge Boutique",
+        "elemText": "Bayview Valley Lodge, Boutique, Boutique Bed & Breakfast, 5 Star Accommodation in Whitianga ...",
+        "elemLink": "/new-zealand",
+        "elemCountry": "New Zealand"
+    },
+    {
+        "imgUrl": "/countries/australia/sea-change-beachfront-apartments.jpg",
         "imgForSlider": "/home/slider/pic3.webp",
-        "elemTitle": "Nemacolin",
-        "elemText": "Discover rustic charm and refined elegance at Nemacolin, a picturesque retreat nestled amidst Pennsylvania's scenic countryside.",
+        "elemTitle": "Sea Change Beachfront Apartments",
+        "elemText": "Award winning 5 star apartments at Trinity Beach. Discover. Unwind. Indulge. On the doorstep of one of Australia's ...",
         "elemLink": "/australia",
         "elemCountry": "Australia"
     },
