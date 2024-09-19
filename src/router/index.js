@@ -3,6 +3,7 @@ import Home from '../pages/Home.vue'
 import USA from '../pages/countries/USA.vue'
 import Australia from '../pages/countries/Australia.vue'
 import Canada from '../pages/countries/Canada.vue'
+import NewZealand from '../pages/countries/NewZealand.vue'
 import Contact from '../pages/Contact.vue'
 import Privacy from '../pages/Privacy.vue'
 import Terms from '../pages/Terms.vue'
@@ -34,6 +35,12 @@ const router = createRouter({
       name: 'Canada',
       component: Canada,
       meta: {title: "Canada"}
+    },
+    {
+      path: '/new-zealand',
+      name: 'New Zealand',
+      component: NewZealand,
+      meta: {title: "New Zealand"}
     },
     {
       path: '/contact',
