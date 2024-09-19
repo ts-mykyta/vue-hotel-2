@@ -37,12 +37,20 @@ const breakpoints =  {
 
 const dataObj = [
     {
-        "imgUrl": "/countries/usa/port-d-hiver.jpg",
+        "imgUrl": "/countries/australia/sea-change-beachfront-apartments.jpg",
+        "imgForSlider": "/home/slider/pic3.webp",
+        "elemTitle": "Sea Change Beachfront Apartments",
+        "elemText": "Award winning 5 star apartments at Trinity Beach. Discover. Unwind. Indulge. On the doorstep of one of Australia's ...",
+        "elemLink": "/australia",
+        "elemCountry": "Australia"
+    },
+    {
+        "imgUrl": "/countries/australia/coast-motel.jpg",
         "imgForSlider": "/home/slider/pic1.webp",
-        "elemTitle": "Port D'hiver Bed And Breakfast",
-        "elemText": "Escape your everyday cares at our romantic boutique hotel in Melbourne Beach, a Select Registry Property. ...",
-        "elemLink": "/united-states",
-        "elemCountry": "USA"
+        "elemTitle": "Coast Motel and Apartments",
+        "elemText": "Stay on the beachfront & visit the McLaren Vale wineries just 10 minutes from the door of COAST Motel and Apartments.",
+        "elemLink": "/australia",
+        "elemCountry": "Australia"
     },
     {
         "imgUrl": "/countries/usa/captain-david-kelley.jpg",
@@ -75,15 +83,7 @@ const dataObj = [
         "elemText": "Bayview Valley Lodge, Boutique, Boutique Bed & Breakfast, 5 Star Accommodation in Whitianga ...",
         "elemLink": "/new-zealand",
         "elemCountry": "New Zealand"
-    },
-    {
-        "imgUrl": "/countries/australia/sea-change-beachfront-apartments.jpg",
-        "imgForSlider": "/home/slider/pic3.webp",
-        "elemTitle": "Sea Change Beachfront Apartments",
-        "elemText": "Award winning 5 star apartments at Trinity Beach. Discover. Unwind. Indulge. On the doorstep of one of Australia's ...",
-        "elemLink": "/australia",
-        "elemCountry": "Australia"
-    },
+    },  
 ]
 </script>
 
