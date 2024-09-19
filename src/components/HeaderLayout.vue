@@ -77,20 +77,10 @@ watchEffect(() => {
                                     </router-link>  
                                 </li>
                                 <li>
-                                    <router-link to="/netherlands">
-                                        <span>Netherlands</span>
-                                    </router-link> 
-                                </li> 
-                                <li>
                                     <router-link to="/canada">
                                         <span>Canada</span>
                                     </router-link>  
-                                </li>
-                                <li>
-                                    <router-link to="/france">
-                                        <span>France</span>
-                                    </router-link>
-                                </li>  
+                                </li> 
                                 <li>
                                     <router-link to="/australia">
                                         <span>Australia</span>
