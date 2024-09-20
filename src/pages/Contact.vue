@@ -30,7 +30,7 @@ import ScrollToTop from '../components/ScrollToTop.vue';
                             </div>
                             <div>
                                 <div class="email-title">EMAIL:</div>
-                                <a href="mailto:info@australianbestcasinohotels.com" class="email-text">info@australianbestcasinohotels.com</a>
+                                <a href="mailto:info@australiahotelscasino.com" class="email-text">info@australiahotelscasino.com</a>
                             </div>
                         </div>
                     </div>

@@ -18,7 +18,7 @@ import ScrollToTop from '../components/ScrollToTop.vue';
         <section class="policy">
             <div class="container">
                 <div class="policy__body">
-                    <p>This Cookie Policy explains how Novanightstay ("we", "us", or "our") uses cookies and similar technologies on our website located at australiahotelscasino.com ("Website"). This policy explains what cookies are, how we use them, the choices you have regarding cookies, and how you can find more information.</p>
+                    <p>This Cookie Policy explains how Australiahotelscasino ("we", "us", or "our") uses cookies and similar technologies on our website located at australiahotelscasino.com ("Website"). This policy explains what cookies are, how we use them, the choices you have regarding cookies, and how you can find more information.</p>
 
                     <h2>What are cookies?</h2>
                     <p>Cookies are small data files that a website stores on your device when you visit the website. These files typically contain information like your preferences, language settings, and browsing history. We use cookies to improve your experience on our Website by:</p>
