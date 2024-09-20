@@ -58,7 +58,7 @@ const hotelsData = [
     <Header />
 
     <Promo
-        imgUrl="/countries/usa.jpg"
+        imgUrl="/countries/country_bg.jpg"
         title="Canada HOTELS"
         text="Home > Canada"
     />
