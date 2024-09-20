@@ -14,7 +14,7 @@ import ScrollToTop from '../components/ScrollToTop.vue';
         <Promo 
             title="Contact Us"
             text="Home > Contact Us"
-            imgUrl="/contact/contacts.webp"
+            imgUrl="/contact/contacts.jpg"
         />
 
         <section class="contact">

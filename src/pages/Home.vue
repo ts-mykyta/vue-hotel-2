@@ -154,10 +154,10 @@ const dataObj = [
                         <p>All reviews are verified to ensure they come from real travelers who have taken part in our tours. This guarantees the integrity of our review system and ensures you receive trustworthy information.</p>
                     </div>
                     <div class="blog__img">
-                        <img src="/home/blog1.png" alt="">
+                        <img src="/home/blog1.jpg" alt="">
                     </div>
                     <div class="blog__img">
-                        <img src="/home/blog2.webp" alt="">
+                        <img src="/home/blog2.jpeg" alt="">
                     </div>
                 </div>
             </div>
