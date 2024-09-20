@@ -38,7 +38,7 @@ const breakpoints =  {
 const dataObj = [
     {
         "imgUrl": "/countries/australia/sea-change-beachfront-apartments.jpg",
-        "imgForSlider": "/home/slider/pic3.webp",
+        "imgForSlider": "/home/slider/australia.jpg",
         "elemTitle": "Sea Change Beachfront Apartments",
         "elemText": "Award winning 5 star apartments at Trinity Beach. Discover. Unwind. Indulge. On the doorstep of one of Australia's ...",
         "elemLink": "/australia",
@@ -46,7 +46,7 @@ const dataObj = [
     },
     {
         "imgUrl": "/countries/australia/coast-motel.jpg",
-        "imgForSlider": "/home/slider/pic1.webp",
+        "imgForSlider": "/home/slider/australia2.jpg",
         "elemTitle": "Coast Motel and Apartments",
         "elemText": "Stay on the beachfront & visit the McLaren Vale wineries just 10 minutes from the door of COAST Motel and Apartments.",
         "elemLink": "/australia",
@@ -54,7 +54,7 @@ const dataObj = [
     },
     {
         "imgUrl": "/countries/usa/captain-david-kelley.jpg",
-        "imgForSlider": "/home/slider/pic2.webp",
+        "imgForSlider": "/home/slider/usa2.jpg",
         "elemTitle": "Captain David Kelley House",
         "elemText": "A warm welcome awaits you. The Captain David Kelley House is an upscale bed & breakfast set in a restored Greek Revival ...",
         "elemLink": "/united-states",
@@ -62,7 +62,7 @@ const dataObj = [
     },
     {
         "imgUrl": "/countries/canada/abbie-s-garden-bed-breakfast.jpg",
-        "imgForSlider": "/home/slider/pic3.webp",
+        "imgForSlider": "/home/slider/canada.jpg",
         "elemTitle": "Abbie's Garden Bed & Breakfast",
         "elemText": "Our suites are located in buildings outside the MAIN HOUSE, offering you ultimate guest privacy ...",
         "elemLink": "/canada",
@@ -70,7 +70,7 @@ const dataObj = [
     },
     {
         "imgUrl": "/countries/canada/waterfront-resort.jpg",
-        "imgForSlider": "/home/slider/pic4.webp",
+        "imgForSlider": "/home/slider/canada2.jpg",
         "elemTitle": "Summerland Waterfront Resort & Spa",
         "elemText": "Put rest and rejuvenation on your to-do list with a relaxing stay at the Summerland Waterfront Resort & Spa, set ...",
         "elemLink": "/canada",
@@ -78,7 +78,7 @@ const dataObj = [
     },
     {
         "imgUrl": "/countries/new-zealand/bayview-valley-lodge.jpg",
-        "imgForSlider": "/home/slider/pic5.webp",
+        "imgForSlider": "/home/slider/new-zeland.jpg",
         "elemTitle": "Bayview Valley Lodge Boutique",
         "elemText": "Bayview Valley Lodge, Boutique, Boutique Bed & Breakfast, 5 Star Accommodation in Whitianga ...",
         "elemLink": "/new-zealand",
@@ -250,9 +250,11 @@ const dataObj = [
     &__item
         margin: 0 45px
         position: relative
-
+        
         &-img
             overflow: hidden
+            max-height: 380px
+            height: 100%
 
             img
                 width: 100%
