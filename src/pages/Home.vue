@@ -250,10 +250,10 @@ const dataObj = [
     &__item
         margin: 0 45px
         position: relative
+        height: 100%
         
         &-img
             overflow: hidden
-            max-height: 380px
             height: 100%
 
             img
@@ -265,7 +265,7 @@ const dataObj = [
         &-descr
             position: absolute
             z-index: 3
-            bottom: 5px
+            bottom: 0
             left: 0
             text-align: left
             padding: 20px 0 20px 40px
