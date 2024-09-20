@@ -95,7 +95,7 @@ const dataObj = [
         <Promo 
             title="Discover Australia's Top Hotels." 
             text="Indulge In Luxurious Stays, Enjoy Premier Gaming, And Create Unforgettable Memories."
-            imgUrl="/home/promo.jpg"
+            imgUrl="/home/promo.jpeg"
             specialClasses="promo--home"
         />
 
