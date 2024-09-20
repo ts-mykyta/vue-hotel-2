@@ -18,7 +18,7 @@ import ScrollToTop from '../components/ScrollToTop.vue';
         <section class="policy">
             <div class="container">
                 <div class="policy__body">
-                    <p>This Cookie Policy explains how Novanightstay ("we", "us", or "our") uses cookies and similar technologies on our website located at australianbestcasinohotels.com ("Website"). This policy explains what cookies are, how we use them, the choices you have regarding cookies, and how you can find more information.</p>
+                    <p>This Cookie Policy explains how Novanightstay ("we", "us", or "our") uses cookies and similar technologies on our website located at australiahotelscasino.com ("Website"). This policy explains what cookies are, how we use them, the choices you have regarding cookies, and how you can find more information.</p>
 
                     <h2>What are cookies?</h2>
                     <p>Cookies are small data files that a website stores on your device when you visit the website. These files typically contain information like your preferences, language settings, and browsing history. We use cookies to improve your experience on our Website by:</p>
@@ -49,7 +49,7 @@ import ScrollToTop from '../components/ScrollToTop.vue';
                     <p>We may update this Cookie Policy from time to time. We will notify you of any changes by posting the new Cookie Policy on our Website. You are advised to review this Cookie Policy periodically for any changes.</p>
 
                     <h2>Contact us:</h2>
-                    <p>If you have any questions about this Cookie Policy, please contact us at <a href="mailto:info@australianbestcasinohotels.com">info@australianbestcasinohotels.com</a>.</p>
+                    <p>If you have any questions about this Cookie Policy, please contact us at <a href="mailto:info@australiahotelscasino.com">info@australiahotelscasino.com</a>.</p>
                 </div>
             </div>
         </section>
