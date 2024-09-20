@@ -93,8 +93,8 @@ const dataObj = [
     <main class="main">
         <div id="searchWidget"><iframe id="widgetIframe" src="https://www.expedia.com/marketing/widgets/searchform/widget?wtt=4&tp1=ееее&tp2=345&lob=H&des=&wbi=&olc=000000&whf=4&hfc=&wif=4&ifc=000000&wbc=FFCB00&wbf=4&bfc=3D3100&wws=2&sfs=H300FW400F&langid=1033" width="100%" height="100%" scrolling="no" frameborder="0"></iframe></div>
         <Promo 
-            title="Discover Australia's Premier Casino Hotels" 
-            text="Explore Luxury Accommodations, World-Class Gaming, and Unforgettable Experience"
+            title="Discover Australia's Top Hotels." 
+            text="Indulge In Luxurious Stays, Enjoy Premier Gaming, And Create Unforgettable Memories."
             imgUrl="/home/promo.jpg"
             specialClasses="promo--home"
         />
@@ -106,8 +106,8 @@ const dataObj = [
         <section class="adventure">
             <div class="container">
                 <h4>Experience the Excellence</h4>
-                <h2>Explore our hotel reviews and start your adventure</h2>
-                <p>Your satisfaction is our utmost priority. We deeply value your feedback and use it to enhance our services and offerings. Our consistently high ratings and hotel reviews demonstrate our dedication to delivering outstanding experiences.</p>
+                <h2>Browse our hotel reviews and embark on your next advent</h2>
+                <p>Your satisfaction is our top priority. We greatly value your feedback, using it to continually improve our services and offerings. Our consistently high ratings and positive hotel reviews reflect our commitment to providing exceptional experiences.</p>
             </div>
         </section>
 
@@ -148,10 +148,10 @@ const dataObj = [
         <section class="blog">
             <div class="container">
                 <div class="blog__wrapper">
-                    <h2 class="blog__title">Our reviews are written by real travelers who have experienced our tours firsthand.</h2>
+                    <h2 class="blog__title">Our reviews are written by authentic travelers who have experienced our tours firsthand.</h2>
                     <div class="blog__descr">
-                        <p>We value transparency in everything we do. Our reviews provide detailed insights into the highlights, challenges, and overall experiences of our tours, giving you a clear picture of what to expect.</p>
-                        <p>We verify all our reviews to ensure they come from genuine travelers who have participated in our tours. This helps maintain the integrity of our review system and ensures you receive reliable information.</p>
+                        <p>We prioritize transparency in every aspect of our service. Our reviews offer detailed insights into the key moments, challenges, and overall experiences of our tours, giving you an honest view of what to expect.</p>
+                        <p>All reviews are verified to ensure they come from real travelers who have taken part in our tours. This guarantees the integrity of our review system and ensures you receive trustworthy information.</p>
                     </div>
                     <div class="blog__img">
                         <img src="/home/blog1.png" alt="">
