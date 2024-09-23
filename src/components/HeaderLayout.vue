@@ -42,7 +42,7 @@ watchEffect(() => {
             <div class="header__wrapper">
                 <router-link to="/" class="header__logo">
                     <img src="/logo.png" alt="logo">
-                    <span>australiahotelscasino</span>
+                    <span>hotelsbestresorts</span>
                 </router-link>
 
                 <nav class="header__menu">
