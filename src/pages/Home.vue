@@ -53,10 +53,10 @@ const dataObj = [
         "elemCountry": "Australia"
     },
     {
-        "imgUrl": "/countries/usa/captain-david-kelley.jpg",
+        "imgUrl": "/countries/usa/atlantis-casino.jpg",
         "imgForSlider": "/home/slider/usa2.jpg",
-        "elemTitle": "Captain David Kelley House",
-        "elemText": "A warm welcome awaits you. The Captain David Kelley House is an upscale bed & breakfast set in a restored Greek Revival ...",
+        "elemTitle": "Atlantis Casino Resort & Spa",
+        "elemText": "Nestled at the base of the Sierra Nevada, Atlantis Casino Resort Spa is proud to be recognized as a AAA ...",
         "elemLink": "/united-states",
         "elemCountry": "USA"
     },
