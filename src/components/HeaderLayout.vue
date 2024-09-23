@@ -254,7 +254,7 @@ watchEffect(() => {
             
             &-logo
                 display: block
-                max-width: 140px
+                max-width: 60px
                 padding: 30px 0 30px 10px
 
                 img
