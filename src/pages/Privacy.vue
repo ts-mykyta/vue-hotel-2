@@ -18,7 +18,7 @@ import ScrollToTop from '../components/ScrollToTop.vue';
         <section class="policy">
             <div class="container">
                 <div class="policy__body">
-                    <p>This Privacy Policy describes how Australiahotelscasino collects, uses, and discloses personal information about you when you use our website.</p>
+                    <p>This Privacy Policy describes how Hotelsbestresorts collects, uses, and discloses personal information about you when you use our website.</p>
 
                     <h2>Information We Collect</h2>
                     <p>We collect the following types of information from our users:</p>
@@ -54,9 +54,9 @@ import ScrollToTop from '../components/ScrollToTop.vue';
                     <h2>Your Choices</h2>
                     <p>You have the following choices regarding your personal information:</p>
                     <ul>
-                        <li>You can access and update your personal information by contacting us at <a href="mailto:info@australiahotelscasino.com">info@australiahotelscasino.com</a></li>
+                        <li>You can access and update your personal information by contacting us at <a href="mailto:info@hotelsbestresorts.com">info@hotelsbestresorts.com</a></li>
                         <li>You can opt out of receiving marketing emails from us by clicking on the unsubscribe link in any marketing email we send you.</li>
-                        <li>You can request that we delete your personal information by contacting us at <a href="mailto:info@australiahotelscasino.com">info@australiahotelscasino.com</a></li>
+                        <li>You can request that we delete your personal information by contacting us at <a href="mailto:info@hotelsbestresorts.com">info@hotelsbestresorts.com</a></li>
                     </ul>
 
                     <h2>Security</h2>
@@ -67,7 +67,7 @@ import ScrollToTop from '../components/ScrollToTop.vue';
 
                     <h2>Contact Us</h2>
                     <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-                    <p>Email: <a href="mailto:info@australiahotelscasino.com">info@australiahotelscasino.com</a></p>
+                    <p>Email: <a href="mailto:info@hotelsbestresorts.com">info@hotelsbestresorts.com</a></p>
 
                     <h2>Additional Information for Users in Europe, USA, Australia, and Canada</h2>
 

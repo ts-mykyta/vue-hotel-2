@@ -9,7 +9,7 @@ function getCurrentYear() {
         <div class="footer__wrapper">
             <div class="container">
                 <div class="footer__mail">
-                    <a href="mailto:info@australiahotelscasino.com">info@australiahotelscasino.com</a>
+                    <a href="mailto:info@hotelsbestresorts.com">info@hotelsbestresorts.com</a>
                     <a href="tel:+61396509223">Phone +6.139.6509.223</a>
                     <p>Address:367 Collins St, Melbourne VIC 3000</p>
                 </div>
@@ -38,7 +38,7 @@ function getCurrentYear() {
         </div>
         <div class="footer__copyright">
             <div class="container">
-                <span>Australiahotelscasino.com - All Rights Reserved © {{ getCurrentYear() }}</span>
+                <span>Hotelsbestresorts.com - All Rights Reserved © {{ getCurrentYear() }}</span>
             </div>
         </div>
     </footer>
